@@ -1,12 +1,13 @@
 #all=$(find . -maxdepth 100 -type f -not -path '*/\.*')
 all=$(ls -R)
-NOW=`date`
+
+git commit -m 123
 
 for entry in $all*
 do
   	echo "$entry"
 	git add "$entry"
-	git commit -m "$date"
+	git commit -m 123
 	git push
 done
 
