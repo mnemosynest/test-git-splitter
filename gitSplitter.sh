@@ -1,7 +1,7 @@
 
 
 
-all=$(find $(pwd) -maxdepth 100 -type f -not -path '*/\.*')
+all=$(find . -maxdepth 100 -type f -not -path '*/\.*')
 
 
 for entry in $all*
